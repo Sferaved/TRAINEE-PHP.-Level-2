@@ -29,12 +29,11 @@
                        <li><a href="#">Main</a></li>
                        <li><a href="#">First</a></li>
                        <li><a href="#">Second</a></li>
-                       <li class="dropdown">
+                       <li>
                                <a class="dropdown-toggle" data-toggle="dropdown"> Список <span class="caret"></span></a>
                                <ul class="dropdown-menu">
-                                   <li><a href="#">Элемент 1</a></li>
-                                   <li><a href="#">Элемент 2</a></li>
-                                   <li><a href="#">Элемент 3</a></li>
+                                   <li><a href="https://google.com">Google</a></li>
+                                   <li><a href="https://bing.com">Bing</a></li>
                                </ul>
                         </li>
                    </ul>
@@ -45,6 +44,24 @@
    </div>
 </header>
 <main>
+    <button class="btn btn-info" data-toggle="modal" data-target="#MyModalWindow">My Modal Window</button>
+    <div id="MyModalWindow" class="modal fade"  tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="model-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Modal header</h4>
+                </div>
+                <div class="modal-body">
+                    Modal body
+                </div>
+                <div class="modal-footer">
+                    Modal footer
+                    <button class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
     <?php
         echo $_GET['search']; ?>
     <br>
@@ -52,6 +69,8 @@
         <div class="row">
             <a type="button" href="https://google.com" class="btn btn-primary"><span class="glyphicon glyphicon-link"></span>Google</a>
             <a type="button" href="https://bing.com" class="btn btn-danger"><span class="glyphicon glyphicon-apple"></span>Bing</a>
+            <button class="btn btn-default" data-toggle="collapse" data-target="#mytable">Collapse</button>
+
         </div>
 
     </div>
@@ -66,10 +85,39 @@
     </div>
     <br>
     <div class="container">
+        <ul class="nav nav-pills">
+            <li><a href="#main" class="tab" data-toggle="pill">Main</a></li>
+            <li><a href="#profile" class="tab" data-toggle="pill">Profile</a></li>
+            <li><a href="#message" class="tab" data-toggle="pill">Message</a></li>
+            <li><a href="#settings" class="tab" data-toggle="pill">Settings</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="main" class="tab-pane">Main</div>
+            <div id="profile" class="tab-pane">Profile</div>
+            <div id="message" class="tab-pane">Message</div>
+            <div id="settings" class="tab-pane">Settings</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li><a href="#main1" class="tab" data-toggle="tab">Main</a></li>
+            <li><a href="#profile1" class="tab" data-toggle="tab">Profile</a></li>
+            <li><a href="#message1" class="tab" data-toggle="tab">Message</a></li>
+            <li><a href="#settings1" class="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="main1" class="tab-pane">Main</div>
+            <div id="profile1" class="tab-pane">Profile</div>
+            <div id="message1" class="tab-pane">Message</div>
+            <div id="settings1" class="tab-pane">Settings</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
         <div class="row">
             <form role="form" action="#" class="form-horizontal">
-
-                <div class="form-grope">
+              <div class="form-grope">
                     <label for="email" class="control-label col-md-2 text-success">Email</label>
                     <div class="col-md-10">
                         <input type="email" class="form-control" name="email" id="email" placeholder="input email" required><br>
@@ -98,7 +146,7 @@
                 <div class="form-grope">
                     <div class="col-md-2"></div>
                     <div class="col-md-10">
-                        <button  type="submit"  class="btn btn-primary">
+                        <button  type="submit"  class="btn btn-primary" data-toggle="tooltip" title="нажми меня">
                             <i class="glyphicon glyphicon-alert"> </i> Отправить
                         </button>
                    <!--     <input type="submit" class="btn btn-danger glyphicon glyphicon-inbox"> -->
@@ -192,9 +240,9 @@
     </div>
 
 
-    <div class="table-responsive container">
+    <div class="table-responsive container collapse in" id="mytable">
         <div class="row">
-            <table class="table table-bordered table-hover">
+            <table class="table table-bordered table-hover" data-toggle="tooltip" title="Моя таблица">
                 <thead>
                 <tr class="active">
                     <th>Name</th>
