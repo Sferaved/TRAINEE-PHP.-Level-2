@@ -47,12 +47,17 @@
                     </div>
                 </div>
                 <div class="form-grope">
-                    <label for="email" class="control-label col-md-2">Email</label>
+                    <label for="email" class="control-label col-md-2"><i class="glyphicon glyphicon-envelope"></i></label>
                     <div class="col-md-10">
                         <input type="email" class="form-control" name="email" id="email" placeholder="andrey18051@gmail.com" required><br>
                     </div>
                 </div>
-
+                <div class="form-grope">
+                    <label for="phone" class="control-label col-md-2"><i class="glyphicon glyphicon-earphone"></i></label>
+                    <div class="col-md-10">
+                        <input type="tel"   class="form-control" name="phone" id="phone" placeholder="+38 (093) 673-44-88" required><br>
+                    </div>
+                </div>
                 <div class="form-grope">
                     <label for="password" class="control-label col-md-2" >Password</label>
                     <div class="col-md-10">
@@ -69,8 +74,7 @@
                         <button  type="reset"  class="btn btn-danger" >
                             Reset
                         </button>
-                        <!--     <input type="submit" class="btn btn-danger glyphicon glyphicon-inbox"> -->
-                    </div>
+                   </div>
                 </div>
 
             </form>

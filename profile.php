@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <title>Login</title>
+    <title>Profile</title>
 </head>
 <body>
 <header>
@@ -30,42 +30,51 @@
 </header>
 <main>
 
-  <br><br><br><br><br>
-  <div class="container">
-        <div class="row">
-            <form role="form" action="#" class="form-horizontal">
-                <div class="form-grope">
-                    <label for="email" class="control-label col-md-2">Email</label>
-                    <div class="col-md-10">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="andrey18051@gmail.com" required><br>
-                    </div>
-                </div>
-
-                <div class="form-grope">
-                    <label for="password" class="control-label col-md-2" >Password</label>
-                    <div class="col-md-10">
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required><br>
-                    </div>
-
-                </div>
-
-                <div class="form-grope">
-                    <div class="col-md-10 col-md-offset-2">
-                        <button  type="submit"  class="btn btn-success" >
-                            Submit
-                        </button>
-                        <button  type="reset"  class="btn btn-danger" >
-                            Reset
-                        </button>
-                        <a class="btn btn-primary" href="register.php">Reg now</a>
-                    </div>
-
-                </div>
-
-            </form>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <h1 style="text-align: center"> My profile</h1>
+            </div>
         </div>
-
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <img src="img/No_image_available.svg.png" alt="No foto" class="img-responsive img-rounded">
+            </div>
+            <div class="col-md-8 col-md-offset-1">
+                <table class="table table-bordered table-hover" title="Profile">
+                    <tbody>
+                    <tr class="bg-info">
+                        <th >First Name</th>
+                        <td>vxczvxzv </td>
+                    </tr>
+                    <tr>
+                        <th>Second Name</th>
+                        <td>xczvxzcv </td>
+                    </tr>
+                    <tr class="bg-info">
+                        <th>Password</th>
+                        <td> xcvzxcv</td>
+                    </tr>
+                    <tr>
+                        <th> <i class="glyphicon glyphicon-earphone"></i> </th>
+                        <td>xczvxzcvxcvcxzxczv </td>
+                    </tr>
+                    <tr class="bg-info">
+                        <th><i class="glyphicon glyphicon-envelope"></i></th>
+                        <td>xzcvxzcvxczvcxz </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

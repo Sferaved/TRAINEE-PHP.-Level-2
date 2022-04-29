@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <title>Login</title>
+    <title>Posts</title>
 </head>
 <body>
 <header>
@@ -29,43 +29,30 @@
    </div>
 </header>
 <main>
-
-  <br><br><br><br><br>
-  <div class="container">
+    <br>
+    <?php
+    for ($i = 1; $i <= 8; $i++) { ?>
+        <div class="container">
         <div class="row">
-            <form role="form" action="#" class="form-horizontal">
-                <div class="form-grope">
-                    <label for="email" class="control-label col-md-2">Email</label>
-                    <div class="col-md-10">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="andrey18051@gmail.com" required><br>
-                    </div>
-                </div>
+            <div class="col-md-10 col-md-offset-1 bg-primary">
+                <img src="img/No_image_available.svg.png" alt="No foto" class="img-responsive img-rounded" height ="50" width="50" style="float: left">
+                Andrii Korzhov
+            </div>
 
-                <div class="form-grope">
-                    <label for="password" class="control-label col-md-2" >Password</label>
-                    <div class="col-md-10">
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required><br>
-                    </div>
-
-                </div>
-
-                <div class="form-grope">
-                    <div class="col-md-10 col-md-offset-2">
-                        <button  type="submit"  class="btn btn-success" >
-                            Submit
-                        </button>
-                        <button  type="reset"  class="btn btn-danger" >
-                            Reset
-                        </button>
-                        <a class="btn btn-primary" href="register.php">Reg now</a>
-                    </div>
-
-                </div>
-
-            </form>
+            <div class="col-md-10 col-md-offset-1 bg-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
+                Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
+                Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
+            </div>
+            <div class="col-md-10 col-md-offset-1 bg-warning" >
+                12-05-2022
+            </div>
         </div>
-
+        </div>
     </div>
+    <br>
+    <?php  } ?>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
