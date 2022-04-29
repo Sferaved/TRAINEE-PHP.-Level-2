@@ -1,40 +1,9 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <title>My bootstrap</title>
-</head>
-<body>
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="nav navbar-default navbar-inverse" >
-                <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="index.php" class="navbar-brand">My bootstrap</a>
-                </div>
-                <div class="container navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.php">Main</a></li>
-                        <li><a href="profile.php">Profile</a></li>
-                        <li><a href="posts.php">Posts</a></li>
-                        <li><a href="login.php">Login</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-</header>
-<main>
+<?php
+     require_once "layouts/header.php";
+     require_once "layouts/navigation.php";
+     require_once "layouts/layout.php";
+require_once "layouts/footer.php"
+?>
 
     <div class="jumbotron">
         <div class="container">
@@ -92,19 +61,4 @@
                 Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
-
     </div>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-</main>
-<footer class="footer navbar-fixed-bottom navbar-inverse">
-    <div class="container-fluid">
-        <h6 class="text-primary text-center"> Copyright (c) 2022</h6>
-    </div>
-</footer>
-</body>
-</html>
