@@ -1,8 +1,11 @@
 <?php
-require_once "layouts/header.php";
-require_once "layouts/navigation.php";
-require_once "layouts/layout.php";
-require_once "layouts/footer.php"
+
+set_include_path ($_SERVER['DOCUMENT_ROOT']);
+
+require "views/layouts/header.php";
+require "views/layouts/navigation.php";
+require "views/layouts/layout.php";
+require "views/layouts/footer.php";
 ?>
 <main>
 
@@ -16,7 +19,7 @@ require_once "layouts/footer.php"
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-md-offset-1">
-                <img src="img/No_image_available.svg.png" alt="No foto" class="img-responsive img-rounded">
+                <img src="../../img/No_image_available.svg.png" alt="No foto" class="img-responsive img-rounded">
             </div>
             <div class="col-md-8 col-md-offset-1">
                 <table class="table table-bordered table-hover" title="Profile">

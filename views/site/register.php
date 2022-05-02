@@ -1,8 +1,11 @@
 <?php
-require_once "layouts/header.php";
-require_once "layouts/navigation.php";
-require_once "layouts/layout.php";
-require_once "layouts/footer.php"
+
+set_include_path ($_SERVER['DOCUMENT_ROOT']);
+
+require "views/layouts/header.php";
+require "views/layouts/navigation.php";
+require "views/layouts/layout.php";
+require "views/layouts/footer.php";
 ?>
   <br><br><br><br><br>
   <div class="container">

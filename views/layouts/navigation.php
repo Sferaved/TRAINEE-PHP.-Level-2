@@ -8,14 +8,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.php" class="navbar-brand">My bootstrap</a>
+                    <a href = "../../index.php" class="navbar-brand">MVC bootstrap</a>
                 </div>
                 <div class="container navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.php">Main</a></li>
-                        <li><a href="profile.php">Profile</a></li>
-                        <li><a href="posts.php">Posts</a></li>
-                        <li><a href="login.php">Login</a></li>
+                        <li><a href="../../views/site/profile.php">Profile</a></li>
+                        <li><a href="../../views/site/posts.php">Posts</a></li>
+                        <li><a href="../../views/site/login.php">Login</a></li>
                     </ul>
                 </div>
             </nav>
