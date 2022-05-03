@@ -6,6 +6,8 @@ require "views/layouts/header.php";
 require "views/layouts/navigation.php";
 require "views/layouts/layout.php";
 require "views/layouts/footer.php";
+require "models/User.php";
+
 ?>
   <br><br><br><br><br>
   <div class="container">
@@ -59,15 +61,13 @@ require "views/layouts/footer.php";
     </div>
 <?php
 
-    $firstname = $_POST['firstName'];
-    $lastname = $_POST['lastName'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $password = $_POST['password'];
-
 if (isset($_POST['email'])) {
-    $connection = new PDO('mysql:host=localhost;dbname=mvc_base;charset=utf8', 'root', '');
-    $statement = $connection->prepare("INSERT INTO `users`(`id`, `firstname`, `lastname`, `email`, `phone`, `password`)
-            VALUES (null,'$firstname','$lastname','$email','$phone','$password');");
-    $statement->execute();
+    $users = new User();
+    $users->firstname = $_POST['firstName'];
+    $users->lastname = $_POST['lastName'];
+    $users->email = $_POST['email'];
+    $users->phone = $_POST['phone'];
+    $users->password = $_POST['password'];
+
+    $users->registerUser();
 }

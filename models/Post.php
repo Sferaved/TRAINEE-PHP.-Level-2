@@ -1,8 +1,26 @@
 <?php
 
-$connection = new PDO('mysql:host=localhost;dbname=mvc_base;charset=utf8', 'root', '');
-$posts = $connection->query("SELECT * FROM `posts`");
-$postsArr = $posts->fetchAll();
+class Post
+{
+    public $id;
+    public $user_id;
+    public $post_text;
+    public $date;
 
-$users = $connection->query("SELECT * FROM `users`");
-$usersArr = $users->fetchAll();
+
+    protected $connection;
+    protected $postsArr;
+
+    public function __construct()
+    {
+        $this->connection = new PDO('mysql:host=localhost;dbname=mvc_base;charset=utf8', 'root', '');
+    }
+
+    public function getPosts(): array
+    {
+        $posts = $this->connection->query("SELECT * FROM `posts`");
+        $this->postsArr = $posts->fetchAll();
+
+        return $this->postsArr;
+    }
+}
