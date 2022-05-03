@@ -10,17 +10,17 @@ require "views/layouts/footer.php";
   <br><br><br><br><br>
   <div class="container">
         <div class="row">
-            <form role="form" action="#" class="form-horizontal">
+            <form role="form" action="#" class="form-horizontal" method="post">
                 <div class="form-grope">
                     <label for="firstName" class="control-label col-md-2" >First name</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" name="password" id="firstName" placeholder="Andrii" required><br>
+                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Andrii" required><br>
                     </div>
                 </div>
                 <div class="form-grope">
                     <label for="lastName" class="control-label col-md-2" >Last Name</label>
                     <div class="col-md-10">
-                        <input type="password" class="form-control" name="lastName" id="lastName" placeholder="Korzhov" required><br>
+                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Korzhov" required><br>
                     </div>
                 </div>
                 <div class="form-grope">
@@ -57,4 +57,17 @@ require "views/layouts/footer.php";
             </form>
         </div>
     </div>
+<?php
 
+    $firstname = $_POST['firstName'];
+    $lastname = $_POST['lastName'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $password = $_POST['password'];
+
+if (isset($_POST['email'])) {
+    $connection = new PDO('mysql:host=localhost;dbname=mvc_base;charset=utf8', 'root', '');
+    $statement = $connection->prepare("INSERT INTO `users`(`id`, `firstname`, `lastname`, `email`, `phone`, `password`)
+            VALUES (null,'$firstname','$lastname','$email','$phone','$password');");
+    $statement->execute();
+}
