@@ -1,14 +1,22 @@
 <?php
 
-set_include_path ($_SERVER['DOCUMENT_ROOT']);
+session_start([
+    'cookie_lifetime' => 86400,
+]);
+
+set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
 require "views/layouts/navigation.php";
-require "views/layouts/layout.php";
 require "views/layouts/footer.php";
-?>
-<main>
+require "models/User.php";
 
+
+$user = new User();
+$user->email = $_SESSION['email'];
+$usersArr = $user->getUserId();
+
+?>
     <div class="jumbotron">
         <div class="container">
             <div class="row">
@@ -26,23 +34,23 @@ require "views/layouts/footer.php";
                     <tbody>
                     <tr class="bg-info">
                         <th >First Name</th>
-                        <td>vxczvxzv </td>
+                        <td><?php echo $usersArr['firstname'] ?> </td>
                     </tr>
                     <tr>
-                        <th>Second Name</th>
-                        <td>xczvxzcv </td>
+                        <th>Last Name</th>
+                        <td><?php echo $usersArr['lastname'] ?></td>
                     </tr>
                     <tr class="bg-info">
                         <th>Password</th>
-                        <td> xcvzxcv</td>
+                        <td><?php echo $usersArr['password'] ?></td>
                     </tr>
                     <tr>
                         <th> <i class="glyphicon glyphicon-earphone"></i> </th>
-                        <td>xczvxzcvxcvcxzxczv </td>
+                        <td><?php echo $usersArr['phone'] ?></td>
                     </tr>
                     <tr class="bg-info">
                         <th><i class="glyphicon glyphicon-envelope"></i></th>
-                        <td>xzcvxzcvxczvcxz </td>
+                        <td><?php echo $usersArr['email'] ?></td>
                     </tr>
 
                     </tbody>

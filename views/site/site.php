@@ -1,10 +1,15 @@
 <?php
 
-set_include_path ($_SERVER['DOCUMENT_ROOT']);
+session_start([
+    'cookie_lifetime' => 86400,
+]);
+
+set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
-require "views/layouts/layout.php";
+require "views/layouts/navigation_site.php";
 require "views/layouts/footer.php";
+
 ?>
 
     <div class="jumbotron">
@@ -64,3 +69,4 @@ require "views/layouts/footer.php";
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
     </div>
+

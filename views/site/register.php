@@ -4,8 +4,8 @@ set_include_path ($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
 require "views/layouts/navigation.php";
-require "views/layouts/layout.php";
 require "views/layouts/footer.php";
+
 require "models/User.php";
 
 ?>
@@ -71,3 +71,4 @@ if (isset($_POST['email'])) {
 
     $users->registerUser();
 }
+
