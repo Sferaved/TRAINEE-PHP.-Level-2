@@ -9,8 +9,14 @@ set_include_path($_SERVER['DOCUMENT_ROOT']);
 require "views/layouts/header.php";
 require "views/layouts/navigation.php";
 require "views/layouts/footer.php";?>
-
-    <div class="container" style="margin-top: 200px">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <h2 style="text-align: center"> Logging user</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <div class="row">
             <form role="form" action="#" class="form-horizontal" method="post">
                 <div class="form-grope">
@@ -47,11 +53,6 @@ if (isset($_POST['email'])) {
     if ($user->userVerify() == true) {
         $_SESSION['user_id'] =  $user->getUserName();
         $_SESSION['email'] = $_POST['email'];?>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#href_log").html("<?php echo $_SESSION['user_id'] . ' '?>");
-            });
-        </script>
 
         <div id="MyModalWindow" class="collapse in" style="margin-top: 10px">
         <div class="container">

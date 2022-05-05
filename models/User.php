@@ -8,6 +8,7 @@ class User
     public $email;
     public $phone;
     public $password;
+    public $image;
 
     protected $connection;
     protected $statement;
@@ -29,7 +30,7 @@ class User
 
     public function getUserId(): array
     {
-        $this->statement = $this->connection->prepare("SELECT `id`, `firstname`, `lastname`, `email`, `phone`, `password` FROM `users` WHERE `email` = '$this->email'");
+        $this->statement = $this->connection->prepare("SELECT `id`, `firstname`, `lastname`, `email`, `phone`, `password`, `image` FROM `users` WHERE `email` = '$this->email'");
         $this->statement->execute();
         $this->usersArr = $this->statement->fetch();
         return $this->usersArr;
@@ -46,8 +47,15 @@ class User
 
     public function registerUser()
     {
-        $this->statement = $this->connection->prepare("INSERT INTO `users`(`id`, `firstname`, `lastname`, `email`, `phone`, `password`)
-            VALUES (null,'$this->firstname','$this->lastname','$this->email','$this->phone','$this->password');");
+        $this->statement = $this->connection->prepare("INSERT INTO `users`(`id`, `firstname`, `lastname`, `email`, `phone`, `password`, `image`)
+            VALUES (null,'$this->firstname','$this->lastname','$this->email','$this->phone','$this->password','$this->image');");
+        $this->statement->execute();
+    }
+
+    public function updateUser()
+    {
+        $this->statement = $this->connection->prepare("UPDATE `users` SET `firstname` = '$this->firstname',`lastname` = '$this->lastname', 
+                   `phone` = '$this->phone', `password` = '$this->password' , `image` = '$this->image' WHERE `email` = '$this->email'");
         $this->statement->execute();
     }
 

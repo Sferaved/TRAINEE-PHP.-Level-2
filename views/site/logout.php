@@ -25,7 +25,7 @@ Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dap
 Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
 Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
             <div class="container text-center">
-                <a href="views/site/login.php" class="btn btn-success btn-lg" >Login &raquo;</a>
+                <a href="../../views/site/login.php" class="btn btn-success btn-lg" >Login &raquo;</a>
             </div>
         </div>
     </div>
