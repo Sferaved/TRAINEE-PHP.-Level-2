@@ -14,10 +14,25 @@ class User
     protected $statement;
     protected $usersArr;
     protected $userName;
+    protected $userValidate;
 
     public function __construct()
     {
         $this->connection = new PDO('mysql:host=localhost;dbname=mvc_base;charset=utf8', 'root', '');
+    }
+
+    public function newUserValidate($email): bool
+    {
+        $users = $this->connection->query("SELECT * FROM `users`");
+        $this->usersArr = $users->fetchAll();
+
+        $this->userValidate = true;
+        foreach ($this->usersArr as $item) {
+            if ($item['email'] == $email) {
+                $this->userValidate = false;
+            }
+        }
+        return $this->userValidate;
     }
 
     public function getUsers(): array
