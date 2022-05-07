@@ -7,7 +7,8 @@ session_start([
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
-require "views/layouts/navigation.php"; ?>
+require "views/layouts/navigation.php";
+?>
     <div class="jumbotron">
         <div class="container">
             <div class="row">
