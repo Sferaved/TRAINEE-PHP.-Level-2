@@ -23,4 +23,12 @@ class Post
 
         return $this->postsArr;
     }
+
+    public function addPost()
+    {
+ echo $this->user_id.$this->post_text.$this->date;
+        $this->statement = $this->connection->prepare("INSERT INTO `posts`(`id`, `user_id`, `post_text`, `date`)
+            VALUES (null,'$this->user_id','$this->post_text','$this->date');");
+        $this->statement->execute();
+    }
 }

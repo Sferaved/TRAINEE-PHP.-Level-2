@@ -14,9 +14,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="../../views/site/posts.php">Posts</a></li>
                         <?php
-                        if ($_SESSION['user_id'] !== null) {?>
+                        if ($_SESSION['userName'] !== null) {?>
                             <li><a href="../../views/site/profile.php">Profile</a></li>
-                            <li><a id="href_log" href="../../views/site/logout.php"><?php echo $_SESSION['user_id'] . ' '?>(Logout)</a></li>
+                            <li><a id="href_log" href="../../views/site/logout.php"><?php echo $_SESSION['userName'] . ' '?>(Logout)</a></li>
                             <?php
                         } else { ?>
                         <li><a href="../../views/site/login.php">Login</a></li>

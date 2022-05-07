@@ -43,12 +43,20 @@ class User
         return $this->usersArr;
     }
 
-    public function getUserId(): array
+    public function getUser(): array
     {
-        $this->statement = $this->connection->prepare("SELECT `id`, `firstname`, `lastname`, `email`, `phone`, `password`, `image` FROM `users` WHERE `email` = '$this->email'");
+        $this->statement = $this->connection->prepare("SELECT `id`, `firstname`, `lastname`, `email`, `phone`, `password` , `image` FROM `users` WHERE `email` = '$this->email'");
         $this->statement->execute();
         $this->usersArr = $this->statement->fetch();
         return $this->usersArr;
+    }
+
+    public function getUserId(): int
+    {
+        $this->statement = $this->connection->prepare("SELECT `id` FROM `users` WHERE `email` = '$this->email'");
+        $this->statement->execute();
+        $this->usersArr = $this->statement->fetch();
+        return $this->usersArr['id'];
     }
 
     public function getUserName(): string
