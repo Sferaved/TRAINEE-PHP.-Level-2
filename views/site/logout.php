@@ -3,13 +3,15 @@ session_start([
     'cookie_lifetime' => 86400,
 ]);
 
-$_SESSION['user_id'] = null;
+$_SESSION['userName'] =  null;
+$_SESSION['email'] = null;
+$_SESSION['userId'] =  null;
 
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
 require "views/layouts/navigation.php";
-require "views/layouts/footer.php";
+
 
 require "models/Post.php";
 require "models/User.php";
@@ -72,5 +74,5 @@ Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
     </div>
-
-
+<?php
+require "views/layouts/footer.php";

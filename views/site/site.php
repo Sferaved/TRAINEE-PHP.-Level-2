@@ -8,7 +8,7 @@ set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
 require "views/layouts/navigation_site.php";
-require "views/layouts/footer.php";
+
 
 ?>
 
@@ -69,4 +69,5 @@ require "views/layouts/footer.php";
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
     </div>
-
+<?php
+require "views/layouts/footer.php";

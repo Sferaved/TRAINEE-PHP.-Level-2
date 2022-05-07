@@ -8,12 +8,12 @@ set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
 require "views/layouts/navigation.php";
-require "views/layouts/footer.php";
+
 require "models/User.php";
 
 $user = new User();
 $user->email = $_SESSION['email'];
-$usersArr = $user->getUserId();
+$usersArr = $user->getUser();
 
 ?>
     <div class="jumbotron">
@@ -65,3 +65,4 @@ $usersArr = $user->getUserId();
         </div>
     </div>
 </div>
+

@@ -7,8 +7,7 @@ session_start([
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
-require "views/layouts/navigation.php";
-require "views/layouts/footer.php";?>
+require "views/layouts/navigation.php"; ?>
     <div class="jumbotron">
         <div class="container">
             <div class="row">
@@ -51,9 +50,9 @@ if (isset($_POST['email'])) {
     $user->email = $_POST['email'];
     $user->password = $_POST['password'];
     if ($user->userVerify() == true) {
-        $_SESSION['user_id'] =  $user->getUserName();
-        $_SESSION['email'] = $_POST['email'];?>
-
+        $_SESSION['userName'] =  $user->getUserName();
+        $_SESSION['email'] = $_POST['email'];
+        $_SESSION['userId'] =  $user->getUserId();?>
         <div id="MyModalWindow" class="collapse in" style="margin-top: 10px">
         <div class="container">
             <div class="row">

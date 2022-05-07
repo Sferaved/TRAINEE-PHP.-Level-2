@@ -8,22 +8,49 @@ set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
 require "views/layouts/navigation.php";
-require "views/layouts/footer.php";
+
 
 require "models/Post.php";
-require "models/User.php";
+require "models/User.php";?>
+  <script>
+        $(document) . ready(function(){
+            $('button') .on('click', function() {
 
-if ($_SESSION['user_id'] !== null) {?>
-    <script type = "text/javascript" >
-        $(document) . ready(function () {
-            $("#href_log") . html("<?php echo $_SESSION['user_id'] . ' (Logout)'?>");
+                var user_idValue = '<?php echo $_SESSION['userId']; ?>';
+                var post_textValue = $('textarea').val();
+                var dateValue = "2022-05-07";
+                $.ajax ({
+                    method: "POST",
+                    url: "post_new.php",
+                    data: {user_id: user_idValue , post_text: post_textValue, date: dateValue }
+                })
+                  .done(function () {
+                      $('textarea').val('');
+                  });
+
+
+            });
         });
     </script>
+<?php
+if ($_SESSION['userId'] !== null) {?>
+    <div class="jumbotron">
+        <div class="container-fluid" >
+            <div class="row">
+                <textarea class="col-md-8 col-md-offset-2" name="postText" id="postTextId" cols="300" rows="5"></textarea>
+                <button id="newPost" class="btn btn-info col-md-8 col-md-offset-2">Creat new post</button>
+            </div>
+        </div>
+    </div>
+
+
     <?php
+
 }
 
-$users = new Post();
-$postsArr = $users->getPosts();
+$post = new Post();
+
+$postsArr = $post->getPosts();
 
 $users = new User();
 $usersArr = $users->getUsers();
@@ -33,7 +60,13 @@ foreach ($postsArr as $item) { ?>
         <br>
         <div class="row">
             <div class="col-md-10 col-md-offset-1 bg-primary">
-                <img src="../../img/No_image_available.svg.png" alt="No foto" class="img-responsive img-rounded" height ="50" width="50" style="float: left">
+                <img src="<?php
+                foreach ($usersArr as $value) {
+                    if ($value['id'] == $item['user_id']) {
+                        echo '../../img/' . $value['image'];
+                    }
+                }
+                ?>" alt="avatar" class="img-responsive img-rounded" height ="50" width="50" style="float: left">
                 <?php
                 foreach ($usersArr as $value) {
                     if ($value['id'] == $item['user_id']) {
@@ -54,4 +87,4 @@ foreach ($postsArr as $item) { ?>
     </div>
 
 <?php }
-
+require "views/layouts/footer.php";
