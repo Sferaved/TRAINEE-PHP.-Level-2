@@ -16,13 +16,20 @@ require "models/User.php";?>
         $(document) . ready(function(){
             $('button') .on('click', function() {
 
-                var user_idValue = '<?php echo $_SESSION['userId']; ?>';
-                var post_textValue = $('textarea').val();
-                var dateValue = "2022-05-07";
+                let user_idValue = '<?php echo $_SESSION['userId']; ?>';
+                let post_textValue = $('textarea').val();
+                let dateValue = new Date();
+
+                let dataYear = dateValue.getFullYear();
+                let dataMonth = dateValue.getMonth();
+                let dataDate = dateValue.getDate();
+
+                let data = dataYear + '-' + dataMonth + '-' + dataDate;
+
                 $.ajax ({
                     method: "POST",
                     url: "post_new.php",
-                    data: {user_id: user_idValue , post_text: post_textValue, date: dateValue }
+                    data: {user_id: user_idValue , post_text: post_textValue, date: data }
                 })
                   .done(function () {
                       $('textarea').val('');
