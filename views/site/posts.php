@@ -33,6 +33,7 @@ require "models/User.php";?>
                 })
                   .done(function () {
                       $('textarea').val('');
+                      parent.location.reload();
                   });
 
 
@@ -94,4 +95,3 @@ foreach ($postsArr as $item) { ?>
     </div>
 
 <?php }
-require "views/layouts/footer.php";
