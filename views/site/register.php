@@ -115,7 +115,7 @@ if (isset($_POST['email'])) {
             </div>
         </div>
     </div>
-    <?php
+         <?php
 }
 }
 

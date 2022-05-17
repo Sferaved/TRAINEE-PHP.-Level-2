@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+IndexIgnore */*
+
+RewriteEngine on
+RewriteRule ^img/(.*)$ img/$1 [L]
+RewriteRule . index.php
