@@ -19,8 +19,7 @@ require "views/layouts/navigation_site.php";
                   Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
                   Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
                   Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-                  Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-                  Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+                  Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <div class="container text-center">
                 <a href="views/site/login.php" class="btn btn-success btn-lg" >Login &raquo;</a>
             </div>
@@ -34,8 +33,7 @@ require "views/layouts/navigation_site.php";
                 Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
                 Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
                 Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-                Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-                Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+                Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
         <div class="col-md-3">
@@ -44,8 +42,7 @@ require "views/layouts/navigation_site.php";
                 Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
                 Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
                 Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-                Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-                Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+                Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
         <div class="col-md-3">
@@ -54,8 +51,7 @@ require "views/layouts/navigation_site.php";
                 Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
                 Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
                 Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-                Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-                Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+                Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
         <div class="col-md-3">
@@ -64,8 +60,7 @@ require "views/layouts/navigation_site.php";
                 Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
                 Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
                 Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-                Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-                Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+                Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
     </div>

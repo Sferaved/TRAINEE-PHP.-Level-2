@@ -36,41 +36,37 @@ Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit
         <div class="col-md-3">
             <h2 class="text-center">Item 1</h2>
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
-Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
-Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+            Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
+            Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
+            Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
+            Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
         <div class="col-md-3">
             <h2 class="text-center">Item 2</h2>
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
-Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
-Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+            Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
+            Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
+            Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
+            Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
         <div class="col-md-3">
             <h2 class="text-center">Item 3</h2>
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
-Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
-Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+            Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
+            Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
+            Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
+            Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
         <div class="col-md-3">
             <h2 class="text-center">Item 4</h2>
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
-Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
-Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
-Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.
-Nulla ut tempor quam. Nunc fringilla tincidunt imperdiet. Curabitur in hendrerit elit, quis placerat lacus. Phasellus eget magna nunc.</p>
+            Quisque suscipit scelerisque odio, vel accumsan magna ultricies mollis.
+            Nunc in maximus purus, pretium vulputate ligula. Donec eleifend dolor ut fringilla lacinia.
+            Donec ut libero eros. Praesent vitae elementum nisl. Praesent semper euismod dapibus.
+            Proin efficitur volutpat lectus, nec efficitur ex tristique at. Nulla facilisi.</p>
             <a href="#" class="btn btn-info">More &raquo;</a>
         </div>
     </div>

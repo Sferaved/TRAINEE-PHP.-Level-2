@@ -8,6 +8,8 @@ set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 require "views/layouts/header.php";
 require "views/layouts/navigation.php";
+
+require "controllers/LoginController.php";
 ?>
     <div class="jumbotron">
         <div class="container">
@@ -46,34 +48,8 @@ require "views/layouts/navigation.php";
 <?php
 
 if (isset($_POST['email'])) {
-    require "models/User.php";
-    $user = new User();
-    $user->email = $_POST['email'];
-    $user->password = $_POST['password'];
-    if ($user->userVerify() == true) {
-        $_SESSION['userName'] =  $user->getUserName();
-        $_SESSION['email'] = $_POST['email'];
-        $_SESSION['userId'] =  $user->getUserId();?>
-        <div id="MyModalWindow" class="collapse in" style="margin-top: 10px">
-        <div class="container">
-            <div class="row">
-                <a href="../../views/site/posts.php" class="col-md-12 btn btn-success text-right" data-toggle="collapse" data-target="#MyModalWindow">Logging successful</a></p>
-            </div>
-        </div>
-        </div>
-        <?php
-    } else {
-        $_SESSION['user_id'] =  null;
-        ?>
-        <div id="MyModalWindow" class="collapse in" style="margin-top: 10px">
-            <div class="container">
-                <div class="row">
-                    <button class="col-md-12 btn btn-danger text-right" data-toggle="collapse" data-target="#MyModalWindow">Logging error</button></p>
-                </div>
-            </div>
-        </div>
-         <?php
-    }
+    $connect = new LoginController();
+    $userLogin = $connect->login();
 }
 
 

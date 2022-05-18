@@ -1,7 +1,5 @@
 <?php
 
-
-
 class SiteController
 {
     public $site;

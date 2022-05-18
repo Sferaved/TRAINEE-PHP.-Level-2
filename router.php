@@ -28,6 +28,9 @@ else {
         case 'post_new.php':
             require 'views/site/post_new.php';
             break;
+        case 'register.php':
+            require 'views/site/register.php';
+            break;
     };
 }
 
